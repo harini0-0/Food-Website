@@ -1,4 +1,3 @@
-
 html
 {
     scroll-behavior: smooth;
@@ -10,7 +9,8 @@ body
     background-color:black;
 }
 
-ul {
+ul
+{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -18,9 +18,10 @@ ul {
     position: fixed;
     height: 100%;
     overflow: auto;
-  }
+}
   
-  li a {
+li a 
+{
     display: block;
     color: white;
     padding: 30px 16px;
@@ -29,15 +30,16 @@ ul {
     opacity: 0.6;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
-  }
+}
   
-  li a:hover:not(.active) {
+li a:hover:not(.active)
+{
     color: white;
     opacity: 1;
     border-bottom: 1px solid white;
-  }
-  .sidebar
-  {
-      float:left;
-  }
+}
+.sidebar
+{
+    float:left;
+}
   
