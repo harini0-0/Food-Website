@@ -1,4 +1,9 @@
 
+html
+{
+    scroll-behavior: smooth;
+}
+  
 body
 {
     margin: 0;
@@ -22,14 +27,17 @@ ul {
     text-decoration: none;
     text-align: center;
     opacity: 0.6;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
   }
   
   li a:hover:not(.active) {
     color: white;
     opacity: 1;
+    border-bottom: 1px solid white;
   }
   .sidebar
   {
-      
+      float:left;
   }
   
