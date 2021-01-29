@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="test2.png" type="image/gif">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Quick Food - Home</title>
+</head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<body>
+
+    <div class="header" id="myTopnav">
+        <div class="topicon">
+            <img src="test3.png" width="130px" title="Quick Foods">
+        </div>
+        <div class="heading" >
+            <h>QUICK FOOD</h>
+        </div>
+        <br>
+        <div class="topnav">
+            <a href="#"><i class='fas fa-cart-plus'></i> Cart</a>
+            <a href="#"><i class="fa fa-fw fa-user"></i> Login/Sign In</a>
+        </div>
+        
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="sidebar">
+    <ul>
+        <div class="contents">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+            </div>
+    </ul>
+</div>
+<br>
+<div class="rest">
+
+  
+</div>
+</body>
+</html>
+
+<script>
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("myTopnav").style.backgroundColor = " rgba(39, 36, 36)";
+    } else {
+      document.getElementById("myTopnav").style.backgroundColor = "rgba(128, 128, 128, 0.301)";
+    }
+  }
+  </script>
