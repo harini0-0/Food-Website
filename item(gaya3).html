@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <title>Item Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="main(gaya3).css">
+        <style>
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            .imgs{
+                width: 50px;
+                height: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About us</a>
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in the Item">
+        </div><br><br>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="lassi.png" style="width:100%">
+              <div class="text">Mango Lassi</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="biriyani.png" style="width:100%">
+              <div class="text">Chicken Biriyani</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="lollipop.jpeg" style="width:100%">
+              <div class="text">Chicken Lollipop</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 5</div>
+              <img src="pani puri.png" style="width:100%">
+              <div class="text">Pani Puri</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 5</div>
+              <img src="paneer.png" style="width:100%">
+              <div class="text">Paneer Tikka</div>
+            </div>
+            
+            </div>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+
+            <br><br><br>
+
+            <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+                </script>
+
+    <div class="navbar2">
+        <a href="#Starters">Starters</a>
+        <a href="#Main Dish">Main Dish</a>
+        <a href="#Drinks">Drinks</a>
+        <a href="#Snacks">Snacks</a>
+        <a href="#Desserts">Desserts</a>
+    </div>
+
+<div class="wrapper">
+    <div class="title">
+        <h4 id="Starters">Starters</h4>
+    </div>
+    <div class="menu">
+        <div class="single-menu">
+            <img src="paneer.png" alt="panner tikka">
+            <div class="menu-content">
+                <h4>Paneer tikka <span>Rs 155</span></h4>
+                <p>Paneer cubes (Indian cottage cheese cubes) are marinated in a spiced yogurt-based marinade, arranged on skewers and grilled in the oven.</p>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="lollipop2.jpeg" alt="Chicken lollipop">
+            <div class="menu-content">
+                <h4>Chicken lollipop <span>Rs 165</span></h4>
+                <p>Hot frenched chicken winglets,prepared in red-tinged marinade of garlic,chilli and soy sauce.</p>
+            </div>
+        </div>
+        <div class="title">
+            <h4 id="Main Dish">Main dish</h4>
+        </div>
+        <div class="single-menu">
+            <div class="menu-content">
+                <p>  </p>
+            </div>
+        </div>
+
+        <div class="single-menu">
+            <img src="biriyani.png" alt="Chicken Biriyani">
+            <div class="menu-content">
+                <h4>Chicken Biryani <span>Rs 180</span></h4>
+                <p>Succulent pieces of chicken,long grain rice,dry fruits,delicately flavoured with hyderabadi herbs,spices and saffron.</p>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="aloo.png" alt="Aloo Paratha">
+            <div class="menu-content">
+                <h4>Aloo Paratha <span>Rs 119</span></h4>
+                <p>Made of unleavened dough rolled with a mixture of mashed potato and spices cooked on a hot tawa with butter and served with chutney and Indian pickles on the side.</p>
+            </div>
+        </div>
+        <div class="title">
+            <h4 id="Drinks">Drinks</h4>
+        </div>
+
+        <div class="single-menu">
+            <div class="menu-content">
+                <p>  </p>
+            </div>
+        </div>
+
+        <div class="single-menu">
+            <img src="lassi.png" alt="Mango Lassi">
+            <div class="menu-content">
+                <h4>Mango Lassi <span>Rs 55</span></h4>
+                <p>A refreshing drink consisting of mango pulp, saffron, sugar and whole milk yogurt.</p>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="lime.png" alt="Fresh Lime">
+            <div class="menu-content">
+                <h4>Fresh Lime <span>Rs 35</span></h4>
+                <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+            </div>
+        </div>
+        <div class="title">
+            <h4 id="Snacks">Snacks</h4>
+        </div>
+
+        <div class="single-menu">
+            <div class="menu-content">
+                <p>  </p>
+            </div>
+        </div>
+
+        <div class="single-menu">
+            <img src="pani puri.png" alt="Pani Puri">
+            <div class="menu-content">
+                <h4>Pani Puri <span>Rs 60</span></h4>
+                <p>Crispy puris filled with potatoes,chickpeas,tamarind sauce served with chilled spicy chilli mint water.</p>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="missal_pav.png" alt="Misal Pav">
+            <div class="menu-content">
+                <h4>Misal Pav <span>Rs 80</span></h4>
+                <p>Misal pav is a popular dish from thane, maharashtra, india. It consists of misal and pav. The final dish is topped with farsan, onions, lemon and coriander.</p>
+            </div>
+        </div>
+        <div class="title">
+            <h4 id="Desserts">Desserts</h4>
+        </div>
+
+        <div class="single-menu">
+            <div class="menu-content">
+                <p>  </p>
+            </div>
+        </div>
+
+        <div class="single-menu">
+            <img src="falooda.png" alt="Falooda">
+            <div class="menu-content">
+                <h4>Falooda <span>Rs 90</span></h4>
+                <p>An ice cream dessert made by layering sabja seeds, vermicelli, rose syrup then topped with chilled milk and ice cream.</p>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="icecream_salad.png" alt="Fruits Salad with Ice cream">
+            <div class="menu-content">
+                <h4>Fruits Salad <br>(with Ice cream) <span>Rs 80</span></h4>
+                <p>Fresh seasonal fruits, vanila ice cream topped with whipped cream, honey and nuts.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
