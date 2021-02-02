@@ -3,14 +3,22 @@
     padding:0;
     box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
-    background-image: url('back10(gaya3).jpg');
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-image: url('back10(gaya3).jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .wrapper{
-  width:1200px;
+  width:700px;
   margin:100px auto;
 }
 .title{
@@ -63,6 +71,7 @@ body{
 }
 .single-menu:hover img{
   border-radius:0;
+  opacity: 1;
 }
 .single-menu img{
   width:250px;
@@ -72,6 +81,7 @@ body{
   border:1px solid cyan;
   padding:3px;
   transition:.5s;
+  opacity: 0.6;
 }
 .single-menu h4{
   text-transform:capitalize;
@@ -105,40 +115,27 @@ body{
   .navbar2{
       width: 100%;
       height:80px;
-      padding-left: 325px ;
-      background-color:black; 
+      margin-right: 8%;
+      padding-top: 30px;
+      padding-bottom: 30px;
       /* position: fixed; */
-  }
-  .navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 4px 20px;
-    text-decoration: none;
-  }
-  .navbar a:hover {
-    background-color:cyan;
-    color: black;
-    border-radius: 5px;
   }
   .navbar2 a {
     float: left;
     display: block;
-    color:cyan;
     text-align: center;
-    text-transform:capitalize;
-    font-style:italic;
-    font-size: 35px;
-    padding: 4px 50px;
+    width: 150px;
+    height: 100px;
     text-decoration: none;
+    background-color:black; 
+    opacity: 0.6;
   }
   .navbar2 img{
     border-radius: 50%;
   }
   .navbar2 a:hover {
-    background-color:white;
-    color: black;
+    background-color: #717171;
+    opacity:1 ;
   }
   /* Slideshow container */
 .slideshow-container {
@@ -205,10 +202,7 @@ body{
     to {opacity: 1}
   }
   
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
-  }
+  
   .starters img {
     border-top-right-radius:10px;
     border-bottom-left-radius:10px;
@@ -256,4 +250,46 @@ body{
   color:cyan;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 800px) {
+  .text {font-size: 11px}
+  .wrapper
+  {
+    width: 100%;
+  }
+  .single-menu img{
+    width:100px;
+    height: 80px;
+  }
+  .slideshow-container img{
+      width: 60px;
+      height: 160px;
+      border-radius: 20px;
+  }
+  .navbar2 img{
+    border-radius: 50%;
+    width: 60px;
+    height: 50px;
+  }
+  .navbar2 {
+    margin-left:20% ;
+  }
+  .menu-content
+  {
+    font-size: 12px;
+  }
+  .menu-content span
+  {
+    font-size: 14px;
+  }
+  .title h4
+  {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navbar2 {
+    margin-left:30% ;
+  }
 }
