@@ -23,7 +23,7 @@
  </style>
 <body>
 
-  <div class="header" id="myTopnav">
+  <div class="header" id="head">
     <a href="home.html" ><img src="test3.png"  title="Quick Food"></a>
     <a ><h1>YOUR CART  <i class='fas fa-cart-plus'></i></h1></a>
 </div>
@@ -45,6 +45,10 @@
   
 </div>
 
+<button onclick="topFunction()" id="toTop" title="Go to top"><i class="fas fa-hamburger"></i></button>
+</body>
+</html>
+
 <div class="footer">
     <a href="home.html" ><img src="test3.png"  title="Quick Food"></a>
     <a ><h1>© 2021 Quick Food</h1></a>
@@ -52,6 +56,31 @@
     <a href="" id="ic"><i class="fab fa-twitter"></i></a>
     <a href="" id="ic"><i class="fab fa-google-plus-g"></i></a>
       
-  </div>
-</body>
-</html>
+</div>
+
+
+
+<script>
+    //Get the button
+    var mybutton = document.getElementById("toTop");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("head").style.backgroundColor = "rgb(65, 62, 62)";
+        mybutton.style.display = "block";
+      } else {
+        document.getElementById("head").style.backgroundColor = "rgb(65, 62, 62,0)";
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
