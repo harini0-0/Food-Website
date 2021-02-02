@@ -8,48 +8,63 @@
     <title>Quick Food - Services</title>
 </head>
 
+<style>
+  
+  @media screen and (max-width: 700px) {
+ 
+ .footer a h1
+ {
+   width: 30%;
+  font-size: 18px;
+  margin-left: 12%;
+ }
+ }
+ </style>
+
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <body>  
-    <div class="header" id="myTopnav">
-        <div class="topicon">
-            <img src="test3.png" width="130px" title="Quick Foods">
-        </div>
-        <div class="heading" >
-            <h>SERVICES</h>
-        </div>
-        <br>
-        <div class="topnav">
-            <a href="#"><i class='fas fa-cart-plus'></i> Cart</a>
-        </div>
-        
+  <div class="header" id="myTopnav">
+    <a href="home.html" ><img src="test3.png"  title="Quick Food"></a>
+    <a ><h1>SERVICES</h1></a>
+</div>
+
+</div>
+<div class="sidebar">
+<ul>
+<div class="contents">
+<li><a href="home.html">HOME</a></li>
+<li><a href="services.html">SERVICES</a></li>
+<li><a href="contact.html">CONTACT US</a></li>
+<li><a href="about.html">ABOUT US</a></li>
+<li><a href="cart.html" ><i class='fas fa-cart-plus'></i> Cart</a></li>
     </div>
-    <br><br><br><br><br><br><br><br><br>
-    <div class="sidebar">
-    <ul>
-        <div class="contents">
-        <li><a href="home.html">HOME</a></li>
-        <li><a href="services.html">SERVICES</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
-        <li><a href="about.html">ABOUT US</a></li>
-            </div>
-    </ul>
+</ul>
 </div>
 <br>
 <div class="rest">
+  <div class="homedeli" id="blockdis">
+    <h1>Home Delivery</h1>
+    <img src="delivery.jpg" width="200px">
+    <pre>
+      Call :- +91 8954225559
+              +0135 278393
+    </pre>
+
+  </div>
+  <div class="walkin" id="blockdis">
+
+  </div>
+</div>
+
   
+<div class="footer">
+  <a href="home.html" ><img src="test3.png"  title="Quick Food"></a>
+  <a ><h1>© 2021 Quick Food</h1></a>
+  <a href="" id="ic"><i class="fab fa-facebook-f"></i></a>
+  <a href="" id="ic"><i class="fab fa-twitter"></i></a>
+  <a href="" id="ic"><i class="fab fa-google-plus-g"></i></a>
+    
+</div>
 </div>
 </body>
 </html>
-
-<script>
-  // When the user scrolls down 50px from the top of the document, resize the header's font size
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById("myTopnav").style.backgroundColor = " rgba(39, 36, 36)";
-    } else {
-      document.getElementById("myTopnav").style.backgroundColor = "rgba(128, 128, 128, 0.301)";
-    }
-  }
-  </script>
