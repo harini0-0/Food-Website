@@ -293,3 +293,26 @@ body{
     margin-left:30% ;
   }
 }
+.button {
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: black; 
+  color: white; 
+  border: 2px solid cyan;
+}
+
+.button1:hover {
+  background-color: cyan;
+  color: black;
+}
