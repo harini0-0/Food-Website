@@ -62,7 +62,7 @@ body {
                 0 0 100px #03e9f4;
   }
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 800px) {
     .column {
       width: 100%;
       display: block;
