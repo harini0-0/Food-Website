@@ -56,23 +56,8 @@ ul {
   z-index: 99;
   color: white;
   width: 100%;
-  background-color:rgb(65, 62, 62);
+  /*background-color:rgb(65, 62, 62);*/
   height:100px;
-}
-@media screen and (max-width: 700px) {
-
-  .header
-  {
-    font-size: 30px;
-  }
-  li a
-  {
-    font-size: 13px;
-  }
-  .rest
-  {
-    margin-left: 100px;
-  }
 }
 
 
@@ -116,14 +101,6 @@ ul {
  .header a img:hover:not(.active) {
    opacity: 1;
  }
- @media screen and (max-width: 700px) {
-
-  .header a h1
-  {
-   font-size: 30px;
-   margin-left: 12%;
-  }
- }
  .footer {
   margin-top: 770px;
   width: 100%;
@@ -143,6 +120,7 @@ ul {
   margin-left: 20%;
   text-align: center;
   font-size: 20px;
+  margin-top: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .footer a img
@@ -163,4 +141,52 @@ ul {
 .footer a :hover
 {
   opacity: 1;
+}
+
+#toTop {
+  display: none;
+  position: fixed;
+  bottom: 85px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: #03e9f4;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  opacity: 0.6;
+}
+
+#toTop:hover {
+  background-color: #03e9f4;
+  opacity: 1;
+  color: #555;
+}
+#head
+{
+  background-color:rgb(65, 62, 62,0);
+}
+@media screen and (max-width: 800px) {
+
+ .header a h1
+ {
+  font-size: 30px;
+  margin-left: 12%;
+  margin-top: 30px;
+ }
+  .header
+  {
+    font-size: 30px;
+  }
+  li a
+  {
+    font-size: 13px;
+  }
+  .rest
+  {
+    margin-left: 100px;
+  }
 }
